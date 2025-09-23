@@ -1693,7 +1693,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_l10n_tr_reports
 msgid ""
 "\n"
-"Accounting reports for Türkiye\n"
+"Accounting reports for Turkey\n"
 msgstr ""
 "\n"
 "Бухгалтерские отчеты по Турции\n"
@@ -34985,17 +34985,17 @@ msgstr "Тунис - Бухгалтерские отчеты"
 
 #. module: base
 #: model:res.country,name:base.tr
-msgid "Türkiye"
+msgid "Turkey"
 msgstr "Турция"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr
-msgid "Türkiye - Accounting"
+msgid "Turkey - Accounting"
 msgstr "Турция — Бухгалтерия"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_reports
-msgid "Türkiye - Accounting Reports"
+msgid "Turkey - Accounting Reports"
 msgstr "Турция - Бухгалтерские отчеты"
 
 #. module: base

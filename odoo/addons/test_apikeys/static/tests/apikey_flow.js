@@ -5,6 +5,7 @@ import { rpc } from "@web/core/network/rpc";
 import { registry } from "@web/core/registry";
 
 registry.category("web_tour.tours").add('apikeys_tour_setup', {
+    test: true,
     url: '/odoo?debug=1', // Needed as API key part is now only displayed in debug mode
     steps: () => [{
     content: 'Open user account menu',
@@ -24,7 +25,7 @@ registry.category("web_tour.tours").add('apikeys_tour_setup', {
     run: "click",
 }, {
     content: "Check that we have to enter enhanced security mode",
-    trigger: ".modal div:contains(entering your password)",
+    trigger: ".modal div:contains(enter your password)",
 }, {
     content: "Input password",
     trigger: '.modal [name=password] input',
@@ -55,7 +56,7 @@ registry.category("web_tour.tours").add('apikeys_tour_setup', {
             kwargs: {},
         });
     }
-},
+}, 
 {
     trigger: "button:contains(Done)",
     run: "click",
@@ -86,6 +87,7 @@ registry.category("web_tour.tours").add('apikeys_tour_setup', {
 
 // deletes the previously created key
 registry.category("web_tour.tours").add('apikeys_tour_teardown', {
+    test: true,
     url: '/odoo?debug=1', // Needed as API key part is now only displayed in debug mode
     steps: () => [{
     content: 'Open preferences',
